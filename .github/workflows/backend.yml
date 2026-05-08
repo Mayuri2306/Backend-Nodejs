@@ -2,11 +2,13 @@ name: Backend CI/CD
 
 on:
   push:
+    branches:
+      - main
 
 
 env:
   AWS_REGION: us-west-2
-  ECR_REPOSITORY: backend-repo
+  ECR_REPOSITORY: backend-application
   ECS_CLUSTER: application-cluster
   ECS_SERVICE: backend-service
 
